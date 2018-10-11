@@ -1,7 +1,7 @@
-var money = +prompt("Ваш бюджет на месяц?");
-var time = prompt("Введите дату в формате YYYY-MM-DD");
+let money = +prompt("Ваш бюджет на месяц?");
+let time = prompt("Введите дату в формате YYYY-MM-DD");
 
-var appData = {
+let appData = {
 		money,
 		time, 
 		expenses: {},
@@ -10,7 +10,7 @@ var appData = {
 		savings: false
 };
 
-		 for (var i = 0; i < 2; i++) { 
+		 for (let i = 0; i < 2; i++) { 
 				let a = prompt("Введите обязательную статью расходов в этом месяце"), 
 						b = prompt("Во сколько обойдется?"); 
 				if ( (typeof(a)) === 'string' && (typeof(a)) != null && (typeof(b)) != null 
@@ -38,9 +38,9 @@ var appData = {
 
 // Второй способ
 
-	/*var i = 0;
+	/*let i = 0;
 		while (i<2){
-			var a = prompt("Введите обязательную статью расходов в этом месяце"),
+			let a = prompt("Введите обязательную статью расходов в этом месяце"),
 					b = prompt("Во сколько обойдется?"); 
 			appData.expenses[a] = b;
 			i++;
@@ -48,9 +48,9 @@ var appData = {
 
 // Третий способ
 
-/*var i = 0;
+/*let i = 0;
 do{
-	var a = prompt("Введите обязательную статью расходов в этом месяце"),
+	let a = prompt("Введите обязательную статью расходов в этом месяце"),
 			b = prompt("Во сколько обойдется?"); 
 			appData.expenses[a] = b;
 			i++;
